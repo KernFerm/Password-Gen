@@ -21,7 +21,7 @@
 
 - [Python 3.11.6](https://www.python.org/ftp/python/3.11.6/python-3.11.6-amd64.exe)
     - click `add to path` bottom button click that before continuing to install python. 
-    - **MAKE SURE TO CLICK `ADD TO PATH`. 
+    - **MAKE SURE TO CLICK `ADD TO PATH`**. 
 
 - Required Python packages:
     ```
