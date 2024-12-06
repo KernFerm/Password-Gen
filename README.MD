@@ -14,7 +14,8 @@
 - `de.py`: Handles the decryption and viewing of saved passwords.
 - `requirements.txt`: Lists the Python dependencies required for the project.
 
-### If you want to gen multiple passwords make sure to copy and paste the `password-gen-main` repo folder and rename it to `password-gen-main_2` so on and so forth.
+### NOTE
+- If you want to gen multiple passwords make sure to copy and paste the `password-gen-main` repo folder and rename it to `password-gen-main_2` so on and so forth or whatever name your choose to put for the folder.
 
 ## Installation
 
