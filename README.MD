@@ -17,6 +17,17 @@
 - `decrypt.bat`: Batch script to run the password decryption script easily.
 - `requirements.txt`: Lists the Python dependencies required for the project.
 
+## Requirements
+
+- [Python 3.11.6](https://www.python.org/ftp/python/3.11.6/python-3.11.6-amd64.exe)
+    - click `add to path` bottom button click that before continuing to install python. 
+    - **MAKE SURE TO CLICK `ADD TO PATH`. 
+
+- Required Python packages:
+    ```
+    cryptography
+    ```
+
 ## Installation
 
 1. How To Download Repo 
@@ -79,15 +90,6 @@ generated_password = generate_password(length=20, exclude_similar=True)
 - `Protect your encryption key`: Ensure that the `secure_folder/encryption`.key file is stored securely. Losing this key will make it impossible to decrypt the stored passwords.
 - `Keep passwords private`: Do not share the `passwords.enc` file without the corresponding encryption key.
 - `Use environment-based debugging`: Use environment variables to ensure debugging logs are only shown in development environments.
-
-## Requirements
-
-- `Python 3.11.6+`
-
-- Required Python packages:
-    ```
-    cryptography
-    ```
 
 ## License
 
