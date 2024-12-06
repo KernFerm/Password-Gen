@@ -1,6 +1,6 @@
-# bubbles-secure-tool
+# Bubbles Tacos
 
-**bubbles-secure-tool** is a Python-based tool for securely generating, encrypting, and managing passwords. It utilizes `cryptography` for encryption and ensures that passwords are safely stored.
+**Bubbles Tacos** is a Python-based tool for securely generating, encrypting, and managing passwords. It utilizes `cryptography` for encryption and ensures that passwords are safely stored.
 
 ## Features
 
