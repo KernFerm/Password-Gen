@@ -1,7 +1,7 @@
 import secrets
 import string
 from cryptography.fernet import Fernet
-import hashlib
+import bcrypt
 import os
 
 # Generate and save a key for encryption
@@ -77,13 +77,9 @@ if __name__ == "__main__":
     # Generate a password
     generated_password = generate_password(length=20, exclude_similar=True)
     
-    # Example 1: Avoid logging the password
+    # Save the password securely
     save_password_securely(generated_password)
     
-    # Example 2: Secure logging practices (hashed password for log)
-    hashed_password = hashlib.sha256(generated_password.encode()).hexdigest()
-    print("Generated Password (hashed for log):", hashed_password)
-    
-    # Example 3: Environment-based debugging
-    if os.getenv("ENV") == "development":
-        print("Generated Password (DEBUG):", generated_password)
+    # Secure logging practices using bcrypt for hashing
+    hashed_password = bcrypt.hashpw(generated_password.encode(), bcrypt.gensalt()).decode()
+    print("Generated Password (bcrypt hash):", hashed_password)
