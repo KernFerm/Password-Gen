@@ -37,6 +37,7 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+- Run the `main-launcher.bat` to run the application.
 
 2. A secure password will be generated, encrypted, and saved in the `secure_folder/passwords.enc` file.
 
@@ -47,6 +48,7 @@ python main.py
 ```
 python de.py
 ```
+- Run the `decrypt.bat` to show your password.
 
 2. The script will decrypt and display all stored passwords.
 
