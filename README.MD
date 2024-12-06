@@ -1,25 +1,28 @@
-# Password Gen
+# bubbles-secure-tool
 
-**Password Gen** is a Python-based tool for securely generating, encrypting, and managing passwords. It utilizes `cryptography` for encryption and ensures that passwords are safely stored.
+**bubbles-secure-tool** is a Python-based tool for securely generating, encrypting, and managing passwords. It utilizes `cryptography` for encryption and ensures that passwords are safely stored.
 
 ## Features
 
 - **Password Generation:** Generate highly secure and customizable passwords with options for length, character types, and exclusion of similar-looking characters.
 - **Password Encryption:** Encrypt and save passwords securely using the Fernet encryption from `cryptography`.
 - **Password Decryption:** View stored passwords by decrypting them securely.
+- **Batch Script Launchers:** Use `main-launcher.bat` to generate and save passwords, or `decrypt.bat` to view them conveniently.
 
 ## Files
 
 - `main.py`: Contains the main functions for password generation, encryption, and secure storage.
 - `de.py`: Handles the decryption and viewing of saved passwords.
+- `main-launcher.bat`: Batch script to run the password generation script easily.
+- `decrypt.bat`: Batch script to run the password decryption script easily.
 - `requirements.txt`: Lists the Python dependencies required for the project.
 
 ## Installation
 
 1. Clone this repository:
 ```
-git clone https://github.com/kernferm/password-gen.git
-cd password-gen
+git clone https://github.com/kernferm/bubbles-secure-tool.git
+cd bubbles-secure-tool
 ```
 
 2. Install the dependencies:
@@ -37,7 +40,8 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-- Run the `main-launcher.bat` to run the application.
+
+- Alternatively, run the `main-launcher.bat` to launch the password generator.
 
 2. A secure password will be generated, encrypted, and saved in the `secure_folder/passwords.enc` file.
 
@@ -48,10 +52,10 @@ python main.py
 ```
 python de.py
 ```
-- Run the `decrypt.bat` to show your password.
 
-2. The script will decrypt and display all stored passwords.
+- Alternatively, run the `decrypt.bat` to decrypt and view saved passwords.
 
+2. The script will securely decrypt and display all stored passwords.
 
 ## Customization
 
@@ -67,29 +71,33 @@ You can customize password generation in `main.py` using the following parameter
 
 - `exclude_similar`: Exclude visually similar characters like `O`, `0`, `l`, `1` (default: `False`).
 
-**Example**:
+**Example:**
 
 ```
 generated_password = generate_password(length=20, exclude_similar=True)
 ```
 
-## Security Considerations
+# Security Considerations
 
-- Ensure that the `secure_folder/encryption.key` file is stored securely. Losing this key will make it impossible to decrypt the stored passwords.
-- Do not share the `passwords.enc` file without the corresponding encryption key.
+- `Protect your encryption key`: Ensure that the `secure_folder/encryption`.key file is stored securely. Losing this key will make it impossible to decrypt the stored passwords.
+- `Keep passwords private`: Do not share the `passwords.enc` file without the corresponding encryption key.
+- `Use environment-based debugging`: Use environment variables to ensure debugging logs are only shown in development environments.
 
 ## Requirements
 
-- Python `3.11.6 +`
+- `Python 3.11.6+`
 
 - Required Python packages:
-
     ```
     cryptography
     ```
 
 ## License
 
-**This project is licensed under the MIT License.**
+- This project is licensed under the MIT License. See `LICENSE` for details.
+
+---
+---
+### Happy securing your passwords with bubbles-secure-tool!
 ---
 ---
